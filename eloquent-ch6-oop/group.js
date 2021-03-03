@@ -1,3 +1,17 @@
 class Group{
-    contructor()
+    constructor(){
+        this.arr = [];
+    }
+    static from(obj){
+
+    }
+    add(){
+
+    }
+    delete(){
+
+    }
+    has(){
+
+    }
 }
