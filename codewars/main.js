@@ -70,7 +70,7 @@ function bonusTime(salary, bonus) {
 }
 
 //Better code
-const bonusTime = (salary, bonus) => `£${salary * (bonus ? 10 : 1)}`;
+// const bonusTime = (salary, bonus) => `£${salary * (bonus ? 10 : 1)}`;
 
 /**Create a function which answers the question "Are you playing banjo?".
 If your name starts with the letter "R" or lower case "r", you are playing banjo!
@@ -78,3 +78,8 @@ If your name starts with the letter "R" or lower case "r", you are playing banjo
 The function takes a name as its only argument, and returns one of the following strings: */
 
 const areYouPlayingBanjo = (nme) => (nme.startsWith("R")|| nme.startsWith("r") ? `${nme} plays banjo` : `${nme} does not play banjo`)
+
+//Write a function which calculates the average of the numbers in a given list. Note: Empty arrays should return 0
+function find_average(array) {
+  return  array.length>=1 ? array.reduce((arr, cur)=> (arr+cur), 0) / array.length : 0;
+}
